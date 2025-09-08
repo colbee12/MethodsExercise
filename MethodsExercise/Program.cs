@@ -6,6 +6,7 @@ namespace MethodsExercise
     {
         public static void GatheringUsersInfo()
         {
+            //gathering user info for story
             Console.WriteLine("what's your name?");
             string username = Console.ReadLine();
             Console.WriteLine($"hello, {username}");
@@ -22,7 +23,31 @@ namespace MethodsExercise
         {
            GatheringUsersInfo();
             
-            
+            Console.WriteLine(AddTwoNums(20,20));
+            Console.WriteLine(SubtractTwoNums(34,64));
+            Console.WriteLine(DivideTwoNums(200,20));
+            Console.WriteLine(MultiplyTwoNums(30,3));
         }
+
+        public static int AddTwoNums(int num1, int num2)
+        {
+            return num1 + num2;
+        }
+
+        public static int SubtractTwoNums(int num1, int num2)
+        {
+            return num1 - num2;
+        }
+
+        public static int MultiplyTwoNums(int num1, int num2)
+        {
+            return num1 * num2;
+        }
+
+        public static int DivideTwoNums(int num1, int num2)
+        {
+            return num1 / num2;
+        }
+        
     }
 }
